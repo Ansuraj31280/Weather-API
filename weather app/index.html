@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Weather App</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="search-container mt-5">
+            <div class="input-group mb-3">
+                <input type="text" id="search-input" class="form-control" placeholder="Enter city name (e.g., London, New York, Paris)">
+                <div class="input-group-append">
+                    <button id="search-btn" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+            <p id="hint" class="text-muted">Format: City name (e.g., London, New York, Paris)</p>
+            <ul id="suggestions-list" class="list-group"></ul>
+        </section>
+        <section class="weather-container mt-5">
+            <div class="card">
+                <h2 id="city-name" class="card-title"></h2>
+                <p id="weather-description" class="card-text"></p>
+                <ul class="list-group list-group-flush">
+                    <li id="temperature" class="list-group-item">Temperature: </li>
+                    <li id="humidity" class="list-group-item">Humidity: </li>
+                    <li id="wind-speed" class="list-group-item">Wind Speed: </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
